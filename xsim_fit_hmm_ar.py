@@ -18,7 +18,7 @@ from stats import print_acf_raw_squared
 # ----------------------------
 # Parameters
 # ----------------------------
-n_steps = 100000
+n_steps = 10**6
 seed = 42
 if seed is not None:
     np.random.seed(seed)
@@ -31,7 +31,7 @@ ar1_state1, ar2_state1 = 0.5, -0.2
 ar1_state2, ar2_state2 = 0.3,  0.1
 
 # Transition probabilities for the Markov chain
-p11, p22 = 0.9, 0.9
+p11, p22 = 0.9, 0.7
 p12, p21 = 1 - p11, 1 - p22
 
 plot_figures = False  # Toggle all plotting
